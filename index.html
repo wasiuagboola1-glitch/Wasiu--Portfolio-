@@ -1,141 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wasiu Agboola | Financial Operations & Data Analyst</title>
-  <meta name="description" content="Professional portfolio of Wasiu Agboola — accounting professional with experience in financial operations, reconciliation, reporting, Excel, Power Query and Power BI.">
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#172033;background:#f7f9fc}
-    a{color:inherit}
-    .container{max-width:1050px;margin:auto;padding:0 22px}
-    header{background:#102a43;color:white;padding:72px 0 58px}
-    .tag{display:inline-block;background:#2f80ed;padding:7px 13px;border-radius:20px;font-size:13px;font-weight:bold;margin-bottom:18px}
-    h1{font-size:clamp(38px,6vw,62px);line-height:1.05;margin-bottom:15px}
-    .hero p{font-size:19px;max-width:760px;color:#dbeafe}
-    .buttons{margin-top:25px;display:flex;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-block;text-decoration:none;padding:12px 18px;border-radius:8px;font-weight:bold;background:white;color:#102a43}
-    .btn.alt{background:transparent;color:white;border:1px solid #8fb7df}
-    section{padding:58px 0}
-    h2{font-size:30px;margin-bottom:24px;color:#102a43}
-    .intro{font-size:17px;max-width:850px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-    .card{background:white;border:1px solid #e5eaf0;border-radius:12px;padding:24px;box-shadow:0 5px 18px rgba(16,42,67,.05)}
-    .card h3{margin-bottom:9px;color:#102a43}
-    .skill{display:inline-block;background:#eaf2ff;color:#164e8c;border-radius:18px;padding:8px 12px;margin:5px;font-size:14px;font-weight:bold}
-    .project{border-left:4px solid #2f80ed}
-    .project p{color:#46566b}
-    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;margin-top:25px}
-    .stat{background:#102a43;color:white;border-radius:10px;padding:20px}
-    .stat strong{display:block;font-size:28px}
-    footer{background:#0b1f33;color:#dbeafe;padding:35px 0;text-align:center}
-    .small{font-size:14px;color:#6b7c93}
-    ul{padding-left:20px}
-    li{margin:7px 0}
-    @media(max-width:600px){header{padding-top:50px}section{padding:42px 0}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wasiu Agboola | Financial Analyst</title>
+<meta name="description" content="Wasiu Agboola, Financial Analyst with 3+ years in insurance financial operations: ledger reconciliation, inflow analysis, Excel, Power Query and Power BI.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--ink:#0f1b2d;--muted:#51607a;--bg:#f4f6f8;--card:#fff;--rule:#d5dbe2;--accent:#1f7a5c;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--ink:#e8edf4;--muted:#9aa8bd;--bg:#0e1623;--card:#152033;--rule:#26344c;--accent:#4cc79a;--accent-ink:#0e1623}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "Public Sans",system-ui,sans-serif}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:980px;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:"Newsreader",Georgia,serif;line-height:1.15;margin:0}
+h1{font-size:clamp(2.4rem,8vw,4rem);font-weight:600}
+h2{font-size:clamp(1.6rem,5vw,2.1rem);font-weight:600;margin-bottom:1rem}
+h3{font-size:1.2rem;font-weight:600;margin-bottom:.4rem}
+section{padding:3rem 0;border-top:1px solid var(--rule)}
+nav{display:flex;gap:1.1rem;flex-wrap:wrap;padding:1rem 0;font-size:.95rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent)}
+.hero{display:grid;gap:2rem;padding:2rem 0 3rem}
+.role{font-size:1.15rem;color:var(--muted);margin:.6rem 0 1rem}
+.lead{max-width:60ch}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.4rem}
+.btn{display:inline-block;padding:.75rem 1.25rem;border-radius:6px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.alt{background:transparent;color:var(--accent)}
+.ledger{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:1rem;font-variant-numeric:tabular-nums;font-size:.9rem}
+.ledger caption{text-align:left;font-weight:600;padding-bottom:.6rem}
+.ledger table{width:100%;border-collapse:collapse}
+.ledger th,.ledger td{padding:.4rem .3rem;text-align:right;border-bottom:1px solid var(--rule)}
+.ledger th:first-child,.ledger td:first-child{text-align:left}
+.ledger th{color:var(--muted);font-weight:500}
+.ledger tfoot td{border-bottom:0;font-weight:600;color:var(--accent)}
+.note{font-size:.8rem;color:var(--muted);margin:.6rem 0 0}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1.5rem}
+.stats div{border-left:3px solid var(--accent);padding-left:.8rem}
+.stats strong{display:block;font:600 1.6rem "Newsreader",Georgia,serif}
+.stats span{font-size:.9rem;color:var(--muted)}
+.grid{display:grid;gap:1rem}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:1.2rem}
+.card p{margin:0;color:var(--muted)}
+.skills{display:flex;flex-wrap:wrap;gap:.5rem;padding:0;list-style:none;margin:0}
+.skills li{border:1px solid var(--rule);background:var(--card);border-radius:999px;padding:.3rem .8rem;font-size:.9rem}
+.job{margin-bottom:1.5rem}
+.job .when{color:var(--muted);font-size:.9rem;margin:0 0 .5rem}
+.job ul{margin:0;padding-left:1.1rem}
+.contact-list{list-style:none;padding:0;margin:0 0 1.5rem;display:grid;gap:.4rem}
+footer{padding:2rem 0;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}
+@media (min-width:760px){
+ .hero{grid-template-columns:1.3fr 1fr;align-items:center}
+ .stats{grid-template-columns:repeat(4,1fr)}
+ .grid.two{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
+<div class="wrap">
+<nav aria-label="Main">
+ <a href="#profile">Profile</a><a href="#experience">Experience</a><a href="#services">Business plans</a><a href="#portfolio">Projects</a><a href="#skills">Skills</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a>
+</nav>
 
-<header>
-  <div class="container hero">
-    <span class="tag">FINANCIAL OPERATIONS • RECONCILIATION • DATA</span>
-    <h1>Wasiu Agboola</h1>
-    <p>Accounting professional with experience in financial operations, reconciliation, transaction processing, reporting and process improvement — with practical skills in Advanced Excel, Power Query and Power BI.</p>
-    <div class="buttons">
-      <a class="btn" href="#portfolio">View Portfolio</a>
-      <a class="btn alt" href="#contact">Contact</a>
-    </div>
+<header class="hero" id="home">
+ <div>
+  <h1>Wasiu Agboola</h1>
+  <p class="role">Financial Analyst | MBA, Financial Management</p>
+  <p class="lead">Finance professional with 4 years in insurance financial operations. I reconcile 16 ledgers and bank accounts, analyze 500+ daily inflow transactions, and turn messy financial data into clear reports using Excel, Power Query and Power BI.</p>
+  <div class="btns">
+   <a class="btn" href="#portfolio">View projects</a>
+   <a class="btn alt" href="#contact">Contact me</a>
   </div>
+ </div>
+ <div class="ledger" role="img" aria-label="Illustration of a reconciliation that balances to zero">
+  <table>
+   <caption>Reconciliation check</caption>
+   <thead><tr><th>Item</th><th>Ledger</th><th>Bank</th></tr></thead>
+   <tbody>
+    <tr><td>Inflow A</td><td>250.00</td><td>250.00</td></tr>
+    <tr><td>Inflow B</td><td>180.00</td><td>180.00</td></tr>
+    <tr><td>Inflow C</td><td>320.00</td><td>320.00</td></tr>
+   </tbody>
+   <tfoot><tr><td>Difference</td><td colspan="2">0.00</td></tr></tfoot>
+  </table>
+  <p class="note">Illustration only. Not real data.</p>
+ </div>
 </header>
 
-<main>
-<section>
-  <div class="container">
-    <h2>Professional Profile</h2>
-    <p class="intro">
-      I work at the intersection of accounting operations, financial controls and data. My experience includes high-volume transaction verification and posting, ledger reconciliation, inflow management, exception investigation, reporting and process improvement. I enjoy turning repetitive financial processes into structured, accurate and more efficient workflows.
-    </p>
-    <div class="stats">
-      <div class="stat"><strong>3+ Years</strong>Financial operations & reconciliation experience</div>
-      <div class="stat"><strong>500+</strong>Transactions handled in high-volume workflows</div>
-      <div class="stat"><strong>Advanced</strong>Excel, Power Query & reporting tools</div>
-      <div class="stat"><strong>MBA</strong>Financial Management</div>
-    </div>
-  </div>
+<section id="profile">
+ <h2>Professional profile</h2>
+ <p class="lead">I'm a Life Inflow Officer at AXA Mansard Insurance PLC. I own daily and month-end reconciliations, inter-company ledger postings and direct debit performance analysis, and I work with other teams to resolve variances. I'm now moving into financial analysis, applying my reconciliation discipline and data skills to budgeting support, forecasting and business performance analysis.</p>
+ <div class="stats">
+  <div><strong>4 years</strong><span>Insurance financial operations</span></div>
+  <div><strong>500+</strong><span>Daily inflow transactions analyzed</span></div>
+  <div><strong>16</strong><span>Ledgers and bank accounts reconciled</span></div>
+  <div><strong>MBA</strong><span>Financial Management, 2026</span></div>
+ </div>
+</section>
+
+<section id="experience">
+ <h2>Experience</h2>
+ <div class="job">
+  <h3>Life Inflow Officer, AXA Mansard Insurance PLC</h3>
+  <p class="when">Sept 2022 to present</p>
+  <ul>
+   <li>Analyze daily inflow data across 500+ transactions with Excel and pivot tables to spot trends and variances.</li>
+   <li>Perform daily and month-end reconciliations across about 16 ledgers and bank accounts.</li>
+   <li>Clean and transform large financial datasets with Excel and Power Query.</li>
+   <li>Manage posting, callover and reclassification of inter-company ledger transactions within internal controls.</li>
+   <li>Monitor direct debit performance and cancellations to support cash inflow forecasting.</li>
+  </ul>
+ </div>
+ <div class="job">
+  <h3>Internal Audit Intern, LAUTECH</h3>
+  <p class="when">Nov 2020 to Apr 2021</p>
+  <ul>
+   <li>Gathered audit evidence, organized working papers and performed vouching.</li>
+   <li>Took part in inventory inspections and stock-taking.</li>
+  </ul>
+ </div>
+</section>
+
+<section id="services">
+ <h2>Business plan writing for startups</h2>
+ <p class="lead">I write investor-ready business plans for founders, backed by an MBA in Financial Management and hands-on experience building and funding my own company. Every plan has a financial model that adds up.</p>
+ <div class="grid two">
+  <article class="card"><h3>What you get</h3><p>Executive summary, company overview, market research, competitor and SWOT analysis, marketing strategy, and management structure.</p></article>
+  <article class="card"><h3>Financial model</h3><p>Five-year profit and loss, balance sheet, cash flow, break-even and sensitivity analysis, built in Excel so you can edit it.</p></article>
+  <article class="card"><h3>How it works</h3><p>You send a short brief. I send questions and a draft. We revise until it fits your goal, whether that is a loan, a grant or an investor pitch.</p></article>
+  <article class="card"><h3>Sample work</h3><p>A full real estate and agribusiness plan I wrote for my own company. A sanitized sample is available on request.</p></article>
+ </div>
+ <div class="btns"><a class="btn" href="https://www.fiverr.com/s/mmmxQNx?utm_source=CopyLink_Mobile" target="_blank" rel="noopener">Order on Fiverr</a></div>
 </section>
 
 <section id="portfolio">
-  <div class="container">
-    <h2>Selected Work & Projects</h2>
-    <div class="grid">
-      <div class="card project">
-        <h3>Bank Inflow Reconciliation & Posting</h3>
-        <p>Daily processing of bank inflows, verification, policy-ledger posting, reclassification, callover and reconciliation of outstanding items.</p>
-      </div>
-      <div class="card project">
-        <h3>Financial Process Automation</h3>
-        <p>Designed workflow concepts to reduce manual posting and reconciliation effort by using ledger mappings, structured input files and automated output templates.</p>
-      </div>
-      <div class="card project">
-        <h3>Excel & Power Query Reporting</h3>
-        <p>Use of advanced Excel and Power Query techniques to organize transaction data, improve repeatability and support operational reporting.</p>
-      </div>
-      <div class="card project">
-        <h3>Power BI Analysis</h3>
-        <p>Development of analytical views and dashboards to make financial and operational information easier to monitor and interpret.</p>
-      </div>
-    </div>
-  </div>
+ <h2>Selected work</h2>
+ <div class="grid two">
+  <article class="card"><h3>Bank inflow reconciliation and posting</h3><p>Daily verification of bank inflows, policy-ledger posting, reclassification, callover and follow-up on outstanding items.</p></article>
+  <article class="card"><h3>Financial process automation</h3><p>Workflow designs that cut manual posting and reconciliation effort using ledger mappings, structured input files and automated output templates.</p></article>
+  <article class="card"><h3>Excel and Power Query reporting</h3><p>Repeatable data preparation and operational reports built with advanced Excel and Power Query.</p></article>
+  <article class="card"><h3>Power BI analysis</h3><p>Dashboards and analytical views that make financial and operational information easier to monitor.</p></article>
+ </div>
 </section>
 
-<section>
-  <div class="container">
-    <h2>Core Skills</h2>
-    <div>
-      <span class="skill">Financial Reconciliation</span>
-      <span class="skill">Transaction Processing</span>
-      <span class="skill">Ledger Management</span>
-      <span class="skill">Financial Operations</span>
-      <span class="skill">Advanced Excel</span>
-      <span class="skill">Power Query</span>
-      <span class="skill">Power BI</span>
-      <span class="skill">Data Analysis</span>
-      <span class="skill">Management Reporting</span>
-      <span class="skill">Process Improvement</span>
-      <span class="skill">Internal Controls</span>
-      <span class="skill">Accounting</span>
-    </div>
-  </div>
+<section id="skills">
+ <h2>Core skills</h2>
+ <ul class="skills">
+  <li>Ledger reconciliation</li><li>Variance analysis</li><li>Financial reporting</li><li>Cash flow and inflow analysis</li><li>Budgeting support</li><li>Internal controls</li><li>Power BI and DAX</li><li>Advanced Excel</li><li>Pivot tables</li><li>Power Query</li><li>AIMS</li><li>UNITRACK</li><li>Microsoft 365</li>
+ </ul>
 </section>
 
-<section>
-  <div class="container">
-    <h2>Education & Credentials</h2>
-    <div class="grid">
-      <div class="card"><h3>Bachelor's Degree in Accounting</h3><p>LAUTECH — Second Class Upper Division</p></div>
-      <div class="card"><h3>MBA — Financial Management</h3><p>Completed</p></div>
-      <div class="card"><h3>Accounting Technician</h3><p>AAT — Completed</p></div>
-      <div class="card"><h3>Professional Development</h3><p>ICAN student member with continued development in accounting, analytics and financial operations.</p></div>
-    </div>
-  </div>
+<section id="credentials">
+ <h2>Education and recognition</h2>
+ <div class="grid two">
+  <article class="card"><h3>MBA, Financial Management</h3><p>LAUTECH, 2026</p></article>
+  <article class="card"><h3>B.Tech, Accounting</h3><p>LAUTECH, Second Class Upper, 2022</p></article>
+  <article class="card"><h3>Associate Accounting Technician (AAT)</h3><p>Completed December 2021. ICAN student member.</p></article>
+  <article class="card"><h3>Outstanding Performance Award</h3><p>Settlement Strategy Awards, 2025</p></article>
+ </div>
 </section>
 
 <section id="contact">
-  <div class="container">
-    <h2>Let's Connect</h2>
-    <p class="intro">I am open to opportunities and freelance projects involving financial operations, reconciliation, accounting support, Excel/Power Query automation, reporting and data analysis.</p>
-    <p style="margin-top:18px" class="small">Email and LinkedIn links can be added before publishing.</p>
-  </div>
+ <h2>Let's connect</h2>
+ <p class="lead">I'm open to Financial Analyst roles, business plan writing for startups, and freelance projects in financial operations, reconciliation, Excel and Power Query automation, reporting and data analysis.</p>
+ <ul class="contact-list">
+  <li>Email: <a href="mailto:wasiuagboola1@gmail.com">wasiuagboola1@gmail.com</a></li>
+  <li>LinkedIn: <a href="https://www.linkedin.com/in/wasiu-agboola-960231221" target="_blank" rel="noopener">wasiu-agboola</a></li>
+  <li>Fiverr: <a href="https://www.fiverr.com/s/mmmxQNx?utm_source=CopyLink_Mobile" target="_blank" rel="noopener">Business plan writing gig</a></li>
+  <li>Phone: <a href="tel:+2347040177403">+234 704 017 7403</a></li>
+  <li>Location: Lagos, Nigeria</li>
+ </ul>
+ <a class="btn" href="Wasiu_Agboola_CV_FA.pdf" download>Download CV</a>
 </section>
-</main>
 
-<footer>
-  <div class="container">
-    <p><strong>Wasiu Agboola</strong></p>
-    <p class="small">Financial Operations • Reconciliation • Data Analysis</p>
-  </div>
-</footer>
+<footer>Wasiu Agboola, Financial Analyst</footer>
+</div>
 </body>
 </html>
